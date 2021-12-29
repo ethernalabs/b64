@@ -1,0 +1,19 @@
+name: b64
+version: "0.1.0"
+author: Norman S. <nsantiago2719@gmail.com>
+about: Encode or decode string using Base64 and put it in clipboard
+args:
+    - decode:
+        short: d
+        long: decode
+        value_name: string
+        conflicts_with: encode
+        help: Use this if you want to decode a Base64 string
+        takes_value: true
+    - encode:
+        short: e
+        long: encode
+        conflicts_with: decode
+        value_name: string
+        help: Use this if you want to encode a string to Base64
+        takes_value: true
